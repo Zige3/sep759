@@ -37,10 +37,3 @@ https://restcountries.com/
 
 ---
 
-## How to Run Locally
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/Zige3/sep759.git
-cd sep759
