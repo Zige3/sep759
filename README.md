@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Countries App 🌍
 
-Things you may want to cover:
+A simple Ruby on Rails web application that allows users to search for countries and view detailed information using the REST Countries API.
 
-* Ruby version
+Built with:
+- Ruby on Rails 8
+- HTTParty (API requests)
+- Bootstrap 4 (CDN)
+- SQLite3
 
-* System dependencies
+---
 
-* Configuration
+## 📌 Features
 
-* Database creation
+- Search for countries by name (e.g., "can", "china", "united")
+- Display results in a styled table
+- View detailed information for each country
+- Shows:
+  - Flag
+  - Official name
+  - Region & Subregion
+  - Capital
+  - Population
+  - Languages
+  - Currencies
+  - Google Maps link
 
-* Database initialization
+---
 
-* How to run the test suite
+## 🌐 API Used
 
-* Services (job queues, cache servers, search engines, etc.)
+This project uses the REST Countries API:
 
-* Deployment instructions
+https://restcountries.com/
 
-* ...
+---
+
+## 🚀 How to Run Locally
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/Zige3/sep759.git
+cd sep759
