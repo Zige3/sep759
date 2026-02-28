@@ -1,0 +1,76 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="mb-0"><%= @country[:name_common] %></h1>
+  <%= link_to "Back", root_path(looking_for: params[:looking_for]), 
+      class: "btn btn-outline-secondary" %>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      
+      <!-- Flag column -->
+      <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+        <% if @country[:flag_png].present? %>
+          <%= image_tag @country[:flag_png],
+              alt: "#{@country[:name_common]} flag",
+              class: "flag-lg img-fluid" %>
+        <% end %>
+      </div>
+
+      <!-- Info column -->
+      <div class="col-12 col-md-8">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Official Name:</strong>
+            <%= @country[:name_official] %>
+          </li>
+
+          <li class="list-group-item">
+            <strong>Code:</strong>
+            <span class="badge badge-primary"><%= @country[:cca3] %></span>
+            (<%= @country[:cca2] %>)
+          </li>
+
+          <li class="list-group-item">
+            <strong>Region:</strong>
+            <%= @country[:region] %>
+            <% if @country[:subregion].present? %>
+              — <%= @country[:subregion] %>
+            <% end %>
+          </li>
+
+          <li class="list-group-item">
+            <strong>Capital:</strong>
+            <%= @country[:capital].presence || "—" %>
+          </li>
+
+          <li class="list-group-item">
+            <strong>Population:</strong>
+            <%= number_with_delimiter(@country[:population].to_i) %>
+          </li>
+
+          <li class="list-group-item">
+            <strong>Languages:</strong>
+            <%= @country[:languages].presence || "—" %>
+          </li>
+
+          <li class="list-group-item">
+            <strong>Currencies:</strong>
+            <%= @country[:currencies].presence || "—" %>
+          </li>
+        </ul>
+
+        <% if @country[:maps_google].present? %>
+          <div class="mt-3">
+            <%= link_to "Open in Google Maps",
+                @country[:maps_google],
+                target: "_blank",
+                rel: "noopener",
+                class: "btn btn-primary" %>
+          </div>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>
