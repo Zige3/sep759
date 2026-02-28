@@ -12,7 +12,7 @@ Built with:
 
 ---
 
-## 📌 Features
+## Features
 
 - Search for countries by name (e.g., "can", "china", "united")
 - Display results in a styled table
@@ -29,7 +29,7 @@ Built with:
 
 ---
 
-## 🌐 API Used
+## API Used
 
 This project uses the REST Countries API:
 
@@ -37,7 +37,7 @@ https://restcountries.com/
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### 1️⃣ Clone the repository
 
