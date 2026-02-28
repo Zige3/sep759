@@ -16,7 +16,7 @@ gem "propshaft"
 # Database
 # ----------------------------------------
 group :development, :test do
-  gem "sqlite3", ">= 2.1"
+  gem "sqlite3", ">= 1.4"
 end
 
 group :production do
@@ -56,11 +56,6 @@ gem "solid_cable"
 # Boot optimization
 # ----------------------------------------
 gem "bootsnap", require: false
-
-# ----------------------------------------
-# Deployment
-# ----------------------------------------
-gem "kamal", require: false
 
 # ----------------------------------------
 # Active Storage
